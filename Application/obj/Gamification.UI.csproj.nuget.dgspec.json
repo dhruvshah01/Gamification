@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dhruvshah/Desktop/CS682/Gamification.UI/Gamification.UI/Gamification.UI.csproj": {}
+    "/Users/dhruvshah/Desktop/CS682_Updated/Gamification.UI/Gamification.UI/Gamification.UI.csproj": {}
   },
   "projects": {
-    "/Users/dhruvshah/Desktop/CS682/Gamification.UI/Gamification.UI/Gamification.UI.csproj": {
+    "/Users/dhruvshah/Desktop/CS682_Updated/Gamification.UI/Gamification.UI/Gamification.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dhruvshah/Desktop/CS682/Gamification.UI/Gamification.UI/Gamification.UI.csproj",
+        "projectUniqueName": "/Users/dhruvshah/Desktop/CS682_Updated/Gamification.UI/Gamification.UI/Gamification.UI.csproj",
         "projectName": "Gamification.UI",
-        "projectPath": "/Users/dhruvshah/Desktop/CS682/Gamification.UI/Gamification.UI/Gamification.UI.csproj",
+        "projectPath": "/Users/dhruvshah/Desktop/CS682_Updated/Gamification.UI/Gamification.UI/Gamification.UI.csproj",
         "packagesPath": "/Users/dhruvshah/.nuget/packages/",
-        "outputPath": "/Users/dhruvshah/Desktop/CS682/Gamification.UI/Gamification.UI/obj/",
+        "outputPath": "/Users/dhruvshah/Desktop/CS682_Updated/Gamification.UI/Gamification.UI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/dhruvshah/.nuget/NuGet/NuGet.Config"
@@ -40,27 +40,31 @@
           "dependencies": {
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[5.0.17, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[5.0.17, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[5.0.17, )"
             },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[5.0.17, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[5.0.17, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.17, )"
             }
           },
           "imports": [

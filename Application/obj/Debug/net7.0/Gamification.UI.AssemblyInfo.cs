@@ -10,7 +10,7 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-Gamification.UI-DA3EA21C-1442-4570-B459-E6FF75868348")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gamification.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]

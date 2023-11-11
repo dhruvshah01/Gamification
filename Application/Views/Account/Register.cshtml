@@ -1,0 +1,102 @@
+﻿@model RegisterViewModel
+
+@{
+    Layout = "_MiniLayoutTwo";
+}
+
+<div class="container-xxl">
+    <div class="authentication-wrapper authentication-basic container-p-y">
+        <div class="authentication-inner">
+            <!-- Register Card -->
+            <div class="card">
+                <div class="card-body">
+                    <!-- Logo -->
+                    <div class="app-brand justify-content-center">
+                        <a href="index.html" class="app-brand-link gap-2">
+                            <!-- Your logo code here -->
+                        </a>
+                    </div>
+                    <!-- /Logo -->
+                    <h4 class="mb-2 text-center">Adventure starts here 🚀</h4>
+                    <p class="mb-4 text-center">Make your app management easy and fun!</p>
+
+                    <form asp-controller="Account" asp-action="CreateUsers" method="post" role="form">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+
+                        <!-- Existing registration fields -->
+                        <div class="mb-3">
+                            <label asp-for="ApplicationServer">Application Server</label>
+                            <input asp-for="ApplicationServer" class="form-control" />
+                            @*<span asp-validation-for="ApplicationServer" class="text-danger"></span>*@
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="ClientId">Client ID</label>
+                            <input asp-for="ClientId" class="form-control" />
+                            @*<span asp-validation-for="ClientId" class="text-danger"></span>*@
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Username">Username</label>
+                            <input asp-for="Username" class="form-control" />
+                            @*<span asp-validation-for="Username" class="text-danger"></span>*@
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Email">Email</label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Name">Name</label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Password">Password</label>
+                            <input asp-for="Password" class="form-control" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="ConfirmPassword">Confirm Password</label>
+                            <div class="input-group input-group-merge">
+                                <input asp-for="ConfirmPassword" class="form-control" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" />
+                                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="RoleSelected">Select Role</label>
+                            <div class="input-group input-group-merge">
+                                <select asp-for="RoleSelected" asp-items="@Model.RoleList" class="form-control">
+                                    <option disabled selected>--Select Role--</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- New fields for user creation -->
+                        <div class="mb-3">
+                            <label asp-for="StartingIndex">Starting Index</label>
+                            <input asp-for="StartingIndex" class="form-control" />
+                            <span asp-validation-for="StartingIndex" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="NumberOfUsersToCreate">Number of Users to Create</label>
+                            <input asp-for="NumberOfUsersToCreate" class="form-control" />
+                            <span asp-validation-for="NumberOfUsersToCreate" class="text-danger"></span>
+                        </div>
+
+                        <!-- Individual user registration fields (if needed) -->
+                        <!-- Include your existing registration fields here -->
+
+                        <button type="submit" class="btn btn-primary d-grid w-100">Create Users</button>
+                    </form>
+
+                    <div class="form-group m-2">
+                        <div class="col-md-2">
+                            <a asp-controller="Home" asp-action="Index" class="btn btn-success btn-outline-info form-control">Go Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Register Card -->
+        </
